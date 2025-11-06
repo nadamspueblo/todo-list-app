@@ -45,6 +45,12 @@ function removeTask(event) {
     // Get task div by id
     let taskDiv = document.getElementById("task" + idNum);
 
+    // Apply animation
+    taskDiv.classList.add("remove-task");
+
     // Remove the task div from layout
-    taskDiv.remove();
+    setTimeout(function() {
+        taskDiv.remove();
+    }, 1000);
+    
 }
