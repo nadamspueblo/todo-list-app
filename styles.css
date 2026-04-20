@@ -30,25 +30,31 @@ body {
     padding: 50px 20px;
     flex-grow: 1;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
-.form {
+form {
     background-color: rgb(41, 41, 41);
     margin: 10px;
     border-radius: 20px;
     padding: 50px 20px;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
 
-.form input {
+form input {
     font-size: 24px;
     border-radius: 8px;
-    width: 100%;
+    width: calc(50% - 20px);
+    min-width: 200px;
 }
 
-.form button {
-    width: 80px;
+form button {
+    width: 100%;
+    min-width: 80px;
     background-color: inherit;
     border: 2px solid whitesmoke;
     color: whitesmoke;
@@ -68,7 +74,7 @@ body {
     align-items: center;
 }
 
-.list-item label {
+.list-item p {
     font-size: 24px;
 } 
 
